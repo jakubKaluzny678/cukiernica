@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="pl" prefix="og: https://ogp.me/ns#">
+<head>  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Domowe torty z sercem – artystyczne, klasyczne i okolicznościowe. Ręcznie zdobione, tematyczne dekoracje, zamówienia w Jedlcu." />
+  <meta name="keywords" content="torty Jedlec, torty na zamówienie Jedlec, domowe torty Jedlec, cukiernia Jedlec, Cukiernica Jedlec" />
+  <meta name="robots" content="index, nofollow" />
+  <title>Cukiernica</title>
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"></noscript>
+  <link rel="preload"href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="preload" href="./src/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#kuuurwa" data-bs-offset="100" tabindex="0">
+    <button type="button" class="btn btn-dark btn-floating btn-lg" id="btn-back-to-top">
+  <i class="bi bi-arrow-up"></i>
+</button>
+  <nav class="navbar navbar-expand-lg mb-2 bg-transparent text-body sticky-desktop" id="kuuurwa">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#mainCakeSection" rel="nofollow">
+        <img src="testImages/cukierniaLogo-800.webp"
+        alt="Logo pracowni cukierniczej Ewy Biegańskiej"
+        class="img-fluid rounded-4">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <button class="nav-link nav-active activeSection"  id="mainPage" onclick="mainPageAddClass();">Strona Główna</button>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link activeSection" href="#Offer" rel="nofollow">Oferta</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link activeSection" href="#orderingACake" rel="nofollow">Jak zamówić?</a>
+          </li>
+          <li class="nav-item">
+            <a href="#pricingContainer" class="nav-link">Cennik</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link activeSection" href="galeria.php" id="gallery" rel="follow">Galeria</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<div class="container cakeSection activeSection" id="mainCakeSection">
+    <div class="lemonCard d-flex ">
+      <div class="textAndImg">
+        <img src="testImages/malinowaSymfonia-800.webp"  alt="Malinowa Symfonia" width="800" height="1200" class="img-fluid rounded-4 d-block">
+        <p class="text-left text-muted mt-2">„Malinowa Symfonia” Delikatny, <br>
+          ale wyrazisty smak malin w wydaniu <br>ze śmietankowym kremem i chrupką <br>sprawia, że to idealny duet w każdym przypadku.</p>
+      </div>
+      <div class="container lemonText lemonCard">
+            <h1>
+              Witaj w mojej małej, domowej pracowni cukierniczej, <br>
+              gdzie każdy tort powstaje z serca – dosłownie.
+            </h1>
+        <button class="btn btn-success d-inline-block checkOffer p-3"><a href="#Offer">Sprawdź moją ofertę!</a></button> 
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container text-left quotesCard activeSection">
+  <div class="row cardsSection">
+    <div class="col sectionCard rounded-4  bg-pastel-pink" id="firstCard">
+      <h2>Robienie tortów to przede wszystkim moja pasja, co przekłada się na moje zaangażowanie</h2>
+      To nie jest produkcja taśmowa. To ręczna praca, precyzyjne dekoracje, starannie dobrane składniki i ogromna dbałość o każdy szczegół. Wierzę, że tort to nie tylko deser – to opowieść, emocje i ważna część wyjątkowych momentów.
+    </div>
+    <div class="col sectionCard rounded-4 bg-pastel-beige" id="secondCard">
+      <h2>Każdy tort tworzę od podstaw, z dbałością o najdrobniejsze detale</h2>
+      Każde zamówienie traktuję indywidualnie. Wsłuchuję się w potrzeby, inspiracje i marzenia moich klientów, aby stworzyć coś naprawdę niepowtarzalnego – zarówno pod względem wyglądu, jak i smaku. Pracuję w spokojnym tempie, bez pośpiechu, dzięki czemu mogę w pełni skupić się na każdym detalu i zagwarantować najwyższą jakość
+    </div>
+    <div class="col sectionCard rounded-4 bg-pastel-mint" id="thirdCard">
+      <h3>Tu każdy tort to połączenie pasji, precyzji i wyjątkowej historii, która zachwyca na każdym etapie</h3>
+      Ta pracownia to spełnienie mojego marzenia – o tworzeniu rzeczy pięknych, smacznych i dopracowanych w najmniejszym calu. Jeżeli szukasz tortu, który zachwyci nie tylko wyglądem, ale i historią, która za nim stoi – jesteś w dobrym miejscu.
+    </div>
+  </div>
+</div>
+<div class="container text-center mt-5 offer mb-5 activeSection" id="Offer">
+  <h1>Oferta tortów</h1>
+  <div class="container text-center">
+    <div class="row gap-4">
+      <div class="col">
+        <h2 class="mt-5">Małe torty klasyczne</h2>
+        <img src="testImages/Czekobanana1-400.webp" alt="Czekobana" class="img-fluid rounded-4" width="400" height="400">
+      </div>
+      <p class="border-bottom">
+        Doskonały wybór na spotkania z rodziną lub ze znajomymi, <br>
+        sprawdzi sie na niedzielne popołudnie przy kawie, imieniny, rocznice <br>
+        czy inne domowe wydarzenia <br>
+        Zapraszam do spróbowania, na poczatek dostępne w 4 wariantach – to klasyka, <br>
+        ale w wersji dopasowanej do dzisiejszych oczekiwań!
+      </p>
+      <div class="col">
+        <h2 class="mt-5">Torty artystyczne</h2>
+        <img src="testImages/tortStitch-400.webp" alt="Tort Stitch" class="img-fluid rounded-4" width="400" height="400">
+      </div>
+      <p class="border-bottom">
+        Torty artystyczne to połączenie smaku, rzemiosła i wyobraźni. <br>
+        Każdy powstaje ręcznie, z dbałością o detale i przy użyciu najlepszych składników. <br>
+        Tworzę unikatowe dekoracje, które wymagają precyzji i wielu godzin pracy. <br>
+        Efekt? Torty, które zachwycają wyglądem i smakiem oraz pozostają w pamięci na długo.
+      </p>
+      <div class="col">
+        <h2 class="mt-5">Torty okolicznościowe</h2>
+        <img src="testImages/tort56-400.webp" alt="Tort 56" class="img-fluid rounded-4" width="400" height="400">
+      </div>
+      <p class="border-bottom">
+        Tworzę torty na zamówienie – w wybranym smaku i stylu, dopasowane do okazji: urodzin, ślubu, komunii czy chrzcin. <br>
+        Każdy tort to ręczna robota z dbałością o detale i elegancką dekoracją. <br>
+        Dekoracje są delikatne, i dopasowane do wybranego motywu, tak aby podkreślały charakter wyjątkowej okazji. <br>
+        Ma być pięknie, z charakterem i pysznie – i tak właśnie jest.
+      </p>
+    </div>
+  </div>
+  </div>
+  <div id="carouselExampleControlsNoTouching" class="carousel slide opinionSlide h-100 activeSection" data-bs-touch="false" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <h1 class="text-center mb-2">Opinie moich klientów</h1>
+      <div class="carousel-item active">
+        <div class="border rounded p-4 shadow-sm h-100">
+          <blockquote class="blockquote mb-3">
+            <p class="mb-0 text-center">"Pełna profeska 😊 Ewa jest bardzo utalentowaną kobietą, która tworzy cuda 😍
+              Tort zrobiony na roczek córeczki był prześliczny i oczywiście przepyszny 🤤
+              Z całego serca polecam 😊"
+              </p>
+          </blockquote>
+          <footer class="blockquote-footer text-center">
+            Zadowolona klientka, <cite title="Facebook">Facebook</cite>
+          </footer>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="border rounded p-4 shadow-sm h-100">
+          <blockquote class="blockquote mb-3">
+            <p class="mb-0 text-center">"Czekałam na tak piękny tort całe 31 lat 😍
+              Spełnienie dziecięcych i dorosłych marzeń co do tortu urodzinowego! A do tego taki przepyszny!
+              Ewa dba o każdy szczegół – mój tort to było istne dzieło sztuki 🥰"
+              </p>
+          </blockquote>
+          <footer class="blockquote-footer text-center">
+            Zadowolona klientka, <cite title="Facebook">Facebook</cite>
+          </footer>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="border rounded p-4 shadow-sm h-100">
+          <blockquote class="blockquote mb-3">
+            <p class="mb-0 text-center
+            ">"Tort wykonany dla męża z okazji 30. urodzin był przepyszny – z dodatkowym piętrem, o które poprosiłam, mimo że był tylko dla domowników.
+            Pięknie udekorowany, spełnił wszystkie moje oczekiwania.
+            Serdecznie polecam panią Ewę – przesympatyczna osoba, która potrafi wyczarować cuda 😉😉😉😊"</p>
+          </blockquote>
+          <footer class="blockquote-footer text-center">
+            Zadowolona klientka, <cite title="Facebook">Facebook</cite>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon btn btn-success" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+        <span class="carousel-control-next-icon btn btn-success" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <div class="container activeSection" id="orderingACake">
+    <h2 class="text-center fw-bold mb-4">Jak zamówić tort?</h2>
+    <h3 class="text-center mb-4 text-muted">Torty klasyczne, małe</h3>
+    <div class="timeline position-relative">
+      <div class="timeline-item" data-aos="fade-up">
+        <div class="timeline-icon bg-pastel-pink">
+          <i class="bi bi-chat-dots-fill icon"></i>
+        </div>
+        <div class="timeline-content">
+          <span class="timeline-content-heading mb-1">Napisz do mnie</span> 
+          <p>Możesz wysłać wiadomość na Facebooku, WhatsAppie lub po prostu zadzwonić.</p>
+        </div>
+      </div>
+      <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+        <div class="timeline-icon bg-pastel-mint">
+          <i class="bi bi-clock-fill icon"></i>
+        </div>
+        <div class="timeline-content">
+          <p class="timeline-content-heading">Zamówienie realizuję na bieżąco</p> 
+          <p>Zwykle w ciągu 2–3 dni. Szybko, sprawnie i pysznie!</p>
+        </div>
+      </div>
+      <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+        <div class="timeline-icon bg-pastel-beige">
+          <i class="bi bi-gift-fill icon"></i>
+        </div>
+        <div class="timeline-content">
+          <p class="timeline-content-heading">Wedle życzenia klienta</p> 
+          <p>Oferuję możliwość zapakowania tortu jako prezent</p>
+        </div>
+      </div>
+      <h4 class="text-center mb-4 text-muted">Torty artystyczne i okolicznościowe</h4>
+      <div class="timeline-item" data-aos="fade-up">
+        <div class="timeline-icon bg-pastel-first">
+          <i class="bi bi-chat-dots-fill icon"></i>
+        </div>
+        <div class="timeline-content"> 
+          <p class="timeline-content-heading">Napisz do mnie 2-3 tygodnie wcześniej</p> 
+          <p>Realizacja tego rodzaju tortu jest o wiele bardziej wymagająca. Możesz wysłać wiadomość na Facebooku, WhatsAppie lub po prostu zadzwonić.</p>
+        </div>
+      </div>
+      <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+        <div class="timeline-icon bg-pastel-second">
+          <i class="bi bi-clock-fill icon"></i>
+        </div>
+        <div class="timeline-content">
+          <p class="timeline-content-heading">Podaj termin uroczystości</p>
+          <p>W taki sposób jestem w stanie sprawdzić dostępność terminu</p>
+        </div>
+      </div>
+      <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+        <div class="timeline-icon bg-pastel-third">
+          <i class="bi bi-gift-fill icon"></i>
+        </div>
+        <div class="timeline-content">
+          <p class="timeline-content-heading">Opisz swoją wizję tortu</p> 
+          <p>Możesz opisać wygląd, kolory, motyw lub przesłać zdjęcia służące za inspirację.</p>
+        </div>
+      </div>
+        <div class="timeline-item mt-5" data-aos="fade-up" data-aos-delay="200">
+          <div class="timeline-icon bg-pastel-fourth">
+            <i class="bi bi-gift-fill icon"></i>
+          </div>
+          <div class="timeline-content">
+            <p class="timeline-content-heading">Określ liczbę porcji (osób)</p>
+            <p>Dzięki temu dobierzemy odpowiednią wielkość tortu i przygotujemy wycenę.</p>
+          </div>
+    </div>
+  </div>  
+</div>
+<div class="container mb-5 activeSection" id="pricingContainer">
+  <h1 class="text-center">Cennik</h1> 
+  <div class="row gap-4 pricing">
+    <div class="col rounded-4 pricingItem bg-pastel-third">
+      <h2 class="border-bottom p-2">Tort mały, klasyczny</h2>
+      <span>Do wyboru <b>2</b> rozmiary</span>
+      <ul class="text-start">
+        <li>- Mały (10–12 porcji), duży (15–17 porcji)</li>
+        <li>- Krótki czas realizacji (2-3 dni)</li>
+        <li>- Na życzenie pakowany na prezent</li>
+      </ul>
+      <ul class="border-top pt-1">
+        <li>Cena za mały 100zł, a duży 150zł</li>
+      </ul>
+    </div>
+    <div class="col rounded-4 pricingItem bg-pastel-pink">
+      <h2 class="border-bottom p-2">Tort okolicznościowy</h2>
+      <span>Od <b>10</b> do <b>25</b> porcji</span>
+      <ul class="text-start">
+        <li>- Czas realizacji wynosi siedem dni</li>
+        <li>- <span data-bs-toggle="tooltip" title="Subtelna dekoracja w wybranym motywie">Minimalistyczna dekoracja <i class="bi bi-lightbulb"></i></span></li>
+        <li>- Osiem smaków do wyboru</li>
+      </ul>
+      <ul class="border-top pt-1">
+        <li>Cena zaczyna się od 200 zł</li>
+      </ul>
+    </div>
+    <div class="col rounded-4 pricingItem bg-pastel-fifth">
+      <h2 class="border-bottom p-2">Tort artystyczny</h2>
+      <span>Od <b>10</b> porcji</span>
+      <ul class="text-start">
+        <li>- <span data-bs-toggle="tooltip" title="Zamówienie złożone minimum 2 tyg. przed ustaloną datą odbioru">Czas realizacji 2 tygodnie <i class="bi bi-lightbulb"></i></span></li>
+        <li>- 8 smaków do wyboru</li>
+        <li>- Skomplikowane i szczegółowe dekoracje</li>
+      </ul>
+      <ul class="border-top pt-1">
+        <li>Cena zaczyna się od 300 zł</li>
+      </ul>
+    </div>
+  </div>
+</div>
+</div>
+  <footer class=" py-4" style="background-color: #fdf6f0;">
+    <div class="container footerContainer">
+    <div class="footerMotto">
+      <p class="">🍰 Cukiernica Ewa Biegańska</p>
+      <img src="testImages/cukierniaLogo100x100.png" height="100" width="100" alt="">
+      <p class="mb-2">Z umiłowania rzeczy niebanalnie smacznych i pięknych</p>
+    </div>
+    <div class="footerContact">
+      <ul class="footerLinks mt-2 me-5">
+        <span>Kontakt</span>
+        <li><i class="bi bi-instagram rounded-4 p-1" style="background: linear-gradient(45deg, #feda77, #f58529, #dd2a7b, #8134af, #515bd4);color: #fff;text-align: center;font-size: 1rem;" data-bs-toggle="tooltip" title="cukiernica_slodkie_rzemioslo"></i></li>
+        <li><i class="bi bi-facebook rounded-4 p-1"
+     style="background-color: #1877F2; color: #fff; text-align: center; font-size: 1rem;" data-bs-toggle="tooltip" title="Cukiernica"></i></li>
+        <li><i class="bi bi-geo-alt-fill rounded-4 p-1" data-bs-toggle="tooltip" title="Jedlec 129F" style="background-color: #fff;color: #EA4335;"></i></li>
+        <li><i class="bi bi-telephone-fill rounded-4 p-1" style="background-color: #25D366;color: #fff;text-align: center;font-size: 1rem;" data-bs-toggle="tooltip" title="+48 726 771 575"></i></li>
+      </ul>
+        </div>
+      <div class="footerNav">
+        <ul class="footerNavLinks mt-2">
+          <span>Szybki powrót</span>
+          <li><a href="#Offer">Oferta</a></li> <!-- Dokończyć footer, dodać sr-only i ogólnie sprawdzić czytelność dla ślepych-->
+          <li><a href="#orderingACake">Jak zamówić?</a></li>
+          <li><a href="#pricingItem">Cennik</a></li>
+          <li><a href="galeria.php">Galeria</a></li>
+        </ul>
+      </div>
+    </div>
+        <div class="container text-center">
+          <hr>
+      <span class="mb-0">&copy; 2025 Cukiernica Ewa Biegańska</span>
+    </div>
+  </footer>
+  <button id="toggleSideBar" class="position-fixed start-0 top-50 translate-middle-y z-3 btn btn-dark" type="button" aria-label="Ikony social media">
+      <i class="bi bi-person-lines-fill"></i>
+  </button>
+  <div class="scrolling-side-bar d-flex justify-content-center flex-column container position-fixed top-50 translate-middle-y align-items-center  z-2 overflow-hidden gap-2" id="scrollSideBar" style="left: 0; width: 0; height: auto; transition: width 0.6s ease, padding 0.3s ease;">
+  <a href="https://www.facebook.com/profile.php?id=100092731364436" target="_blank" class="d-inline-block" aria-label="Odwiedź mojego Facebooka">
+  <i class="bi bi-facebook rounded-4 p-1"
+     style="background-color: #1877F2; color: #fff; text-align: center; font-size: 1.5rem;">
+  </i>
+  </a>
+  <a href="https://www.instagram.com/cukiernica_slodkie_rzemioslo/" target="_blank" class="d-inline-block" aria-label="Odwiedź mojego Instagrama">
+  <i class="bi bi-instagram rounded-4 p-1" style="background: linear-gradient(45deg, #feda77, #f58529, #dd2a7b, #8134af, #515bd4);color: #fff;text-align: center;font-size: 1.5rem;"></i>
+  </a>
+  <a href="tel:+48726771575" class="d-inline-block" aria-label="Zadzwoń do mnie">
+  <i class="bi bi-telephone-fill rounded-4 p-1" style="background-color: #25D366;color: #fff;text-align: center;font-size: 1.5rem;" data-bs-toggle="tooltip" title="+48 726 771 575"></i>
+  </a>
+  <a target="_blank" href="https://maps.app.goo.gl/bn9HbbYfNUbPHyoWA" aria-label="Lokalizacja" class="d-inline-block" style="font-size: 1.5rem;">
+    <i class="bi bi-geo-alt rounded-4 p1"></i>
+  </a>
+  </div>
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const scrollToTopButton = document.getElementById('btn-back-to-top');
+window.onscroll = function() {
+  scrollFunction();
+};
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 20 ||
+    document.documentElement.scrollTop > 20
+  ) 
+  {
+    scrollToTopButton.style.display = 'inline-block';
+  } else {
+    scrollToTopButton.style.display = 'none';
+  }
+}
+function backToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+};
+scrollToTopButton.addEventListener("click", backToTop)
+    
+    // skrypt działa po załadowaniu całego DOM'u
+
+  const trigger = document.getElementById('toggleSideBar');
+  const sidebar = document.getElementById('scrollSideBar');
+
+  function showSidebarDesktop() {
+    trigger.style.display = 'none';
+    sidebar.style.visibility = 'visible';
+    sidebar.style.width = '3.75rem';
+    sidebar.style.padding = '1rem 0';
+  }
+
+  function hideSidebarDesktop() {
+    setTimeout(() => {
+      if (!sidebar.matches(':hover') && !trigger.matches(':hover')) {
+        sidebar.style.width = '0';
+        sidebar.style.padding = '0';
+        trigger.style.display = 'block';
+      }
+    }, 100);
+  }
+
+  function showSidebarMobile() {
+    trigger.style.display = 'none';
+    sidebar.style.visibility = 'visible';
+    sidebar.style.width = '3.75rem';
+    sidebar.style.padding = '1rem 0';
+  }
+
+  function hideSidebarMobile() {
+    sidebar.style.width = '0';
+    sidebar.style.padding = '0';
+    trigger.style.display = 'block';
+  }
+
+  if (window.innerWidth >= 768) {
+    // Desktop
+    trigger.addEventListener('mouseenter', showSidebarDesktop);
+    trigger.addEventListener('mouseleave', hideSidebarDesktop);
+    sidebar.addEventListener('mouseleave', hideSidebarDesktop);
+  } else {
+    // Mobile
+    trigger.addEventListener('click', function (e) {
+      e.stopPropagation(); // zapobiega zamknięciu sidebaru od razu
+      showSidebarMobile();
+    });
+
+    document.body.addEventListener('click', function (e) {
+      if (
+        !sidebar.contains(e.target) &&
+        !trigger.contains(e.target)
+      ) {
+        hideSidebarMobile();
+      }
+    });
+
+    // Zapobiegaj zamknięciu przy kliknięciu wewnątrz sidebaru
+    sidebar.addEventListener('click', function (e) {
+      e.stopPropagation();
+    });
+  }
+});
+// JavaScript - prosty i działający
+document.addEventListener('DOMContentLoaded', function () {
+  const trigger = document.getElementById('toggleSideBar');
+  const sidebar = document.getElementById('scrollSideBar');
+
+  function showSidebarMobile() {
+    sidebar.style.visibility = 'visible';
+    sidebar.style.width = '4rem'; // dowolna szerokość
+    trigger.style.display = 'none';
+  }
+
+  function hideSidebarMobile() {
+    sidebar.style.width = '0';
+    sidebar.style.visibility = 'hidden';
+    trigger.style.display = 'block';
+  }
+
+  // Pokaż sidebar po kliknięciu w trigger
+  trigger.addEventListener('click', function (e) {
+    e.stopPropagation(); // zapobiega natychmiastowemu zamknięciu
+    showSidebarMobile();
+  });
+
+  // Kliknięcie poza sidebar — ukryj go
+  document.addEventListener('click', function (e) {
+    if (!sidebar.contains(e.target) && !trigger.contains(e.target)) {
+      hideSidebarMobile();
+    }
+  });
+  // Kliknięcia w środku sidebaru nie zamykają go
+  sidebar.addEventListener('click', function (e) {
+    e.stopPropagation();
+  });
+});
+</script>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+<script src="src/main.js" defer></script>
+</html>
