@@ -415,20 +415,20 @@ scrollToTopButton.addEventListener("click", backToTop)
       }
     });
 
-    // Zapobiegaj zamknięciu przy kliknięciu wewnątrz sidebaru
+    // Zapobiega zamknięciu przy kliknięciu wewnątrz sidebaru
     sidebar.addEventListener('click', function (e) {
       e.stopPropagation();
     });
   }
 });
-// JavaScript - prosty i działający
+
 document.addEventListener('DOMContentLoaded', function () {
   const trigger = document.getElementById('toggleSideBar');
   const sidebar = document.getElementById('scrollSideBar');
 
   function showSidebarMobile() {
     sidebar.style.visibility = 'visible';
-    sidebar.style.width = '4rem'; // dowolna szerokość
+    sidebar.style.width = '4rem'; 
     trigger.style.display = 'none';
   }
 
