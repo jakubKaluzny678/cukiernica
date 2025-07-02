@@ -178,7 +178,7 @@ foreach ($photos as $photo) {
   function showSidebarDesktop() {
     trigger.style.display = 'none';
     sidebar.style.visibility = 'visible';
-    sidebar.style.width = '3.75rem'; // lub 60px
+    sidebar.style.width = '3.75rem';
     sidebar.style.padding = '1rem 0';
   }
 
