@@ -33,7 +33,7 @@ if (isset($_FILES['photo']) && $_FILES['photo']['error'] === UPLOAD_ERR_OK && is
     $tmpName = $_FILES['photo']['tmp_name'];
     $category = $_POST['category'];
 
-    // Tworzymy unikalną nazwę pliku (żeby nie było konfliktów)
+    // Nazwa pliku
     $extension = pathinfo($originalName, PATHINFO_EXTENSION);
     $uniqueName = uniqid('photo_', true) . '.' . $extension;
 
@@ -44,7 +44,6 @@ if (isset($_FILES['photo']) && $_FILES['photo']['error'] === UPLOAD_ERR_OK && is
     }
     $destination = $uploadDir . $uniqueName;
 
-    // Przenosimy plik
     if (move_uploaded_file($tmpName, $destination)) {
         // Zapis do bazy razem z kategorią
         $stmt = $pdo->prepare("INSERT INTO photos (filename, original_name, category) VALUES (?, ?, ?)");
@@ -90,8 +89,6 @@ if (isset($_FILES['photo']) && $_FILES['photo']['error'] === UPLOAD_ERR_OK && is
     <button type="submit">Wyślij</button>
     </form>
 <?php
-// połączenie z bazą (jak masz)
-$pdo = new PDO("mysql:host=localhost;dbname=cukierniaUsers;charset=utf8", 'root', '');
 
 // Funkcja usuwania:
 function deletePhoto($pdo, $id) {
