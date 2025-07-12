@@ -347,6 +347,9 @@ footer {
     display: none;
 }
 @media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
     #notDisplayMobile {
         display: none;
     }
@@ -355,6 +358,9 @@ footer {
     height: auto;
     object-fit: contain;
         }
+    .navbar-toggler {
+        margin: auto;
+    }
     .navbar-brand  {
         img {
         max-height: 5rem;

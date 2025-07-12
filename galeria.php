@@ -30,6 +30,7 @@ foreach ($photos as $photo) {
   <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"></noscript>
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
   <link rel="preload" href="./src/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="shortcut icon" href="./src/images/favicon-16x16.png" type="image/x-icon">
 </head>
 <body>
   <nav class="navbar navbar-expand-lg bg-transparent text-body position-top sticky-desktop">
@@ -73,7 +74,9 @@ foreach ($photos as $photo) {
           <img
           src="testImages/Czekobanana1-left-400.webp" width="400" height="667" 
           alt="">
-        <p class="text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni, perferendis nostrum? Sed delectus eligendi dolor itaque iste officiis dicta exercitationem, porro placeat quo magnam odio voluptatibus adipisci omnis explicabo alias.</p>
+        <p class="text-muted">
+          Zapraszam do obejrzenia galerii moich tortów — każde z nich to opowieść opowiedziana smakiem i formą.
+        </p>
         <button type="button" class="btn btn-dark btn-lg visitButton"><a href="#photoGallery">Odwiedź moją galerie</a></button>
       </div>
       <div class="container text-center" id="photoGallery">
