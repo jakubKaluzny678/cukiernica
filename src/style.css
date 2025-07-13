@@ -104,34 +104,6 @@ body {
   max-width: 18rem;
 }
 
-.carousel-inner {
-  min-height: 22rem;
-}
-
-.carousel-item {
-  min-height: 30rem;
-  height: 100%;
-  overflow: hidden;
-}
-
-.carousel {
-  position: relative;
-}
-
-.carousel-control-prev, .carousel-control-next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.carousel-control-prev {
-  left: 40%;
-}
-
-.carousel-control-next {
-  right: 40%;
-}
-
 .tutorial ul {
   list-style-type: none;
 }
@@ -324,6 +296,7 @@ body {
 
 #btn-back-to-top {
   position: fixed;
+  z-index: 2;
   bottom: 1.25rem;
   right: 1.25rem;
   display: none;
@@ -419,12 +392,23 @@ footer a:hover {
   display: none;
 }
 
+.controls {
+  display: flex;
+  margin-top: 15rem;
+}
+
 @media (max-width: 768px) {
   body {
     overflow-x: hidden;
   }
   #notDisplayMobile {
     display: none;
+  }
+  .controls {
+    margin-top: 23rem;
+  }
+  .carousel-control-prev {
+    margin-left: 4rem;
   }
   img {
     width: 100%;
@@ -477,16 +461,6 @@ footer a:hover {
   }
   .cakeDesc {
     font-size: 0.85rem;
-  }
-  .carousel-inner {
-    margin-top: 5rem;
-    min-height: 22rem;
-  }
-  .carousel-control-prev {
-    left: -0.5rem;
-  }
-  .carousel-control-next {
-    right: -0.5rem;
   }
   .nav-link.nav-active {
     font-weight: bold;
