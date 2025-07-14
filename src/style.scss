@@ -1,5 +1,6 @@
 
 body {
+    overflow-x: hidden;
     line-height: 1.8rem;
 }
 .navbar-brand {
@@ -329,6 +330,9 @@ footer {
 .controls {
     display: flex;
     margin-top: 15rem;
+}
+.carousel {
+    width: 100% !important;
 }
 @media (max-width: 768px) {
     body {
